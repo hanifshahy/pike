@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+
+
+message Msg{
+  uint64 userId=1;
+  uint64 messageId=2;
+  string meg=3;
+}
+
+service Messanger{
+  rpc Trans(Msg)returns (Msg){} 
+}
